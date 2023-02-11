@@ -31,12 +31,14 @@ button {
     
   }
 
-img {
+.usuarios img {
     width: 100%;
     height: 100%;  
-    width: 200px;
     margin-right: 40px;
     margin-top: 60px;
+    transition: all 0.3s;
+    cursor: pointer;
+    border-radius: 5px;
   }
 
 h1 {
@@ -51,23 +53,21 @@ h1 {
     margin-left: 17px;
   }
 
-  a {
-    display: inline-block;
-  }
-  
-  img {
+  .usuarios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 160px;
-    height: 160px;
-    transition: all 0.3s;
-    cursor: pointer;
   }
   
-  a:hover img {
+  .usuarios:hover img {
     transform: scale(1.1);
     background-color: 3 px solid white;
     color: #fff;
     transform: translateY(-2px);
     box-shadow: 0 0 10px #faf7f7;
+    opacity: 1;
   }
 
   .clickable-button {
@@ -111,12 +111,32 @@ h1 {
     
   }
 
-  p {
-    color:#faf7f7;
+  .usuarios p {
+    color: grey;
+    opacity: 80%;
     text-align: center;
     margin-right: 40px;
-    
+  
   }
+
+  .usuarios:hover p {
+    color: white;
+  
+  }
+
+footer {
+  text-align: center;
+  align-items: center;
+}
+
+.usuarios .mais {
+  opacity: 0.2;
+}
+
+.usuarios .mais img:hover {
+  opacity: 1;
+}
+
 
   
   
